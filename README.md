@@ -23,7 +23,9 @@ $ git clone [REPO]
 $ cd [REPO]
 $ ./mvnw clean install
 ``` 
+## What it looks like on Concourse 
 
+![alt tag](https://raw.https://github.com/reagul/pcf-ers-demo/pcfers-demo.png)
 ### To run the application locally
 The application is set to use an embedded H2 database in non-PaaS environments, and to take advantage of Pivotal CF's auto-configuration for services. To use a MySQL Dev service in PCF, simply create and bind a service to the app and restart the app. No additional configuration is necessary when running locally or in Pivotal CF.
 
