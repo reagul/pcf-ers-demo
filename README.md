@@ -1,21 +1,13 @@
 [![Build Status](https://travis-ci.org/mborges-pivotal/pcf-ers-demo1.svg?branch=master)](https://travis-ci.org/mborges-pivotal/pcf-ers-demo1)
 [ ![Download](https://api.bintray.com/packages/mborges-pivotal/generic/pcf-ers-demo1/images/download.svg) ](https://bintray.com/mborges-pivotal/generic/pcf-ers-demo1/_latestVersion)
 
-# PCF Elastic Runtime Service (ERS) Base Demo
-Base application to demonstrate PCF ERS
+# PCF Concourse Base Demo
+Base application to demonstrate Concourse And PCF
 
-## Credits and contributions
-As you all know, we often transform other work into our own. This is all based from Andrew Ripka's [cf-workshop-spring-boot github repo](https://github.com/pivotal-cf-workshop/cf-workshop-spring-boot) with some basic modifications.
 
 ## Introduction
-This base application is intended to demonstrate some of the basic functionality of PCF ERS:
+This base application is intended to demonstrate some of the basic functionality of Concoruse and PCF:
 
-* PCF api, target, login, and push
-* PCF environment variables
-  * Spring Cloud Profiles
-* Scaling, self-healing, router and load balancing
-* RDBMS service and application auto-configuration
-* Blue green deployments
 
 ## Getting Started
 
@@ -40,8 +32,6 @@ In Pivotal CF, it is assumed that a Pivotal MySQL service will be used.
 ```
 $ ./mvnw spring-boot:run
 ```
-
-Then go to the http://localhost:8080 in your browser
 
 ### Running on Cloud Foundry
 Take a look at the manifest file for the recommended setting. Adjust them as per your environment.
