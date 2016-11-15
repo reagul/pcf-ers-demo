@@ -13,6 +13,7 @@ This base application is intended to demonstrate some of the basic functionality
 
 **Prerequisites**
 - [Cloud Foundry CLI](http://info.pivotal.io/p0R00I0eYJ011dAUCN06lR2)
+- Concourse up and running locally. Please download this ( Vagrantfile) from http://www.Concourse.ci
 - [Git Client](http://info.pivotal.io/i1RI0AUe6gN00C010l12J0R)
 - An IDE, like [Spring Tool Suite](http://info.pivotal.io/f00RC0N0lh01eU21IAJ260R)
 - [Java SE Development Kit](http://info.pivotal.io/n0I60i3021AN0JU0le10CRR)
