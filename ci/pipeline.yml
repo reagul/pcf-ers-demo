@@ -83,3 +83,7 @@ jobs:
   - put: cf
     params:
           manifest: prepare-integration/manifest.yml
+- name: ManualStep
+  plan:
+  - task: Blue-Green-Deploy
+    file: pcf-ers-demo/ci/tasks/prepare-integration.yml

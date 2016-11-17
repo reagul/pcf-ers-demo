@@ -1,0 +1,19 @@
+github-uri: https://github.com/someurl
+github-branch: master
+
+github-private-key: |-
+  -----BEGIN RSA PRIVATE KEY-----
+  kQ2CvBZ9gERjovDB9j75SKEb7kUtG8HnV6BgkE/qqP5AJU+602B6+rUzd90w/NSU
+  pEP5PJq/FMqtGremojw1FUAnYnW4x1D1T4MDP5CCH6Zjz1EPKYNOVevwc/n7zLO2
+  TFBU8tDfOvKpnBs708nrmLUCgYAgDJiCbpEa2RKoOXy5ZlbDLsunHwvhPeOmNPQJ
+  aRutSrPrAmaR6o\sdasdfasdonooolnpjnosadfasdfpnppnpnmiPvEaDRp90qz4
+  PfzFoERaEJ7NkCgNfm3ozn38rwXbtHekHzqTbSPUamshHSwGVqYf3l0sG6nBM3zz
+  hpkk8QKBgADoasdfasdclk oln j osadfasdfasdflojknk kjnbanp8MD7cwWn
+  czjEx6xkoUsiwf7ftS5DmcXDh6CLTsZXFgVqGmwe9ivqnfbOOdVX3WVm4W/VCEK2
+  UKrEnuMSppNlhgFl4IZmXgmqk+fPPa/IRwrMjKaNKEjJ+maIr0jo
+  -----END RSA PRIVATE KEY-----
+cf-api: https://cf-api
+cf-username: youremail
+cf-password: somepwd
+cf-org: yourorg
+cf-space: yourspace
