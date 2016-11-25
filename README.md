@@ -42,7 +42,7 @@ Take a look at the manifest file for the recommended setting. Adjust them as per
 ## Demo Scripts summary
 The application tries to be self-descriptive. You'll see when you access the application.
 
-## Show PivotalTracker Commit 
+## Show PivotalTracker Commit. Create webhook integrtion first
 
 [(Finishes|Fixes|Delivers) #TRACKER_STORY_ID]
 
