@@ -24,7 +24,7 @@ $ git clone [REPO]
 $ cd [REPO]
 $ ./mvnw clean install
 ``` 
-## What it looks like on Concourse 
+## What it looks like on Concourse ..
 
 ![alt tag] (https://github.com/reagul/pcf-ers-demo/blob/master/pcfers-demo.png)
 ### To run the application locally
