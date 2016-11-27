@@ -47,5 +47,5 @@ The application tries to be self-descriptive. You'll see when you access the app
 [(Finishes|Fixes|Delivers) #TRACKER_STORY_ID]
 
 ## Using Tracker resource as part of Concourse.ci pipeline
-
+[Finishes #134971619]
 
