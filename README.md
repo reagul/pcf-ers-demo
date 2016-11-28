@@ -39,10 +39,22 @@ $ ./mvnw spring-boot:run
 ### Running on Cloud Foundry
 Take a look at the manifest file for the recommended setting. Adjust them as per your environment.
 
-## Demo Scripts summary
-The application tries to be self-descriptive. You'll see when you access the application.
 
-## Show PivotalTracker Commit. Create webhook integrtion first
+## PivotalTracker Integration. 
+1> Create a Pivotal Tracker account. Under your profiles, copy the API token. This you will enter into the GitWebhooks form.
+2> Create Git webhooks for Pivotal tracker.. see here (https://www.pivotaltracker.com/blog/guide-githubs-service-hook-tracker/)
+3> Create a Concourse pipeline with Tracker resoruce. See the example Yml file under ci/Tracker.yml.
+4> When tracker resource runs, it will Deliver the story 
+
+### Tracker Worlflow 
+
+Tracker resource in Concourse is  used to "DELIVER" the story once it has passed CI, so for example, when i make commits to github.com projects, we add status like this  [Finishes #123456] to commit message. This is picked up by the GitWebhook that runs once commit is detected for the given project and relayed to Tracker. When Tracker resource runs, it will complete the DELIVERY of the fixes by updating the status of the story / epic / bug in Tracker to "DELIVERED". The following is typical Developer / Product manager workflow.
+
+- The git hook finishes the story/epic in Tracker
+- Our pipeline triggers on that commit
+- Once the pipeline passes the tracker-resource Delivers / Completes the story. Your PM will see a Accept / Reject status next to the Epic now.
+
+Note: The commit status has the status with the ID of the Epic in our example above its #123456.
 
 [(Finishes|Fixes|Delivers) #TRACKER_STORY_ID]
 
