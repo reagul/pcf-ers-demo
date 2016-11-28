@@ -45,10 +45,10 @@ Take a look at the manifest file for the recommended setting. Adjust them as per
 
 ## PivotalTracker Integration. 
 
-1> Create a Pivotal Tracker account. Under your profiles, copy the API token. This you will enter into the GitWebhooks form.
-2> Create Git webhooks for Pivotal tracker.. see here (https://www.pivotaltracker.com/blog/guide-githubs-service-hook-tracker/)
-3> Create a Concourse pipeline with Tracker resoruce. See the example Yml file under ci/Tracker.yml.
-4> When tracker resource runs, it will Deliver the story 
+1)Create a Pivotal Tracker account. Under your profiles, copy the API token. This you will enter into the GitWebhooks form.
+2)Create Git webhooks for Pivotal tracker.. see here (https://www.pivotaltracker.com/blog/guide-githubs-service-hook-tracker/)
+3)Create a Concourse pipeline with Tracker resoruce. See the example Yml file under ci/Tracker.yml.
+4)When tracker resource runs, it will Deliver the story 
 
 ### Tracker Worlflow 
 
