@@ -24,7 +24,7 @@ $ git clone [REPO]
 $ cd [REPO]
 $ ./mvnw clean install
 ``` 
-## What it looks like on Concourse 
+## What it looks like on Concourse ..
 
 ![alt tag] (https://github.com/reagul/pcf-ers-demo/blob/master/pcfers-demo.png)
 ### To run the application locally
@@ -42,4 +42,11 @@ Take a look at the manifest file for the recommended setting. Adjust them as per
 ## Demo Scripts summary
 The application tries to be self-descriptive. You'll see when you access the application.
 
+## Show PivotalTracker Commit. Create webhook integrtion first
 
+[(Finishes|Fixes|Delivers) #TRACKER_STORY_ID]
+
+## Using Tracker resource as part of Concourse.ci pipeline
+[Finishes #134988335]
+[Finishes #134971619]
+[Finishes #134988591]
