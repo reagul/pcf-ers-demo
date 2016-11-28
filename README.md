@@ -24,9 +24,12 @@ $ git clone [REPO]
 $ cd [REPO]
 $ ./mvnw clean install
 ``` 
-## What it looks like on Concourse ..
+## What it looks like on Concourse
 
 ![alt tag] (https://github.com/reagul/pcf-ers-demo/blob/master/pcfers-demo.png)
+
+Note: The red box around Tracker resource and how it will end up looking..
+
 ### To run the application locally
 The application is set to use an embedded H2 database in non-PaaS environments, and to take advantage of Pivotal CF's auto-configuration for services. To use a MySQL Dev service in PCF, simply create and bind a service to the app and restart the app. No additional configuration is necessary when running locally or in Pivotal CF.
 
@@ -41,6 +44,7 @@ Take a look at the manifest file for the recommended setting. Adjust them as per
 
 
 ## PivotalTracker Integration. 
+
 1> Create a Pivotal Tracker account. Under your profiles, copy the API token. This you will enter into the GitWebhooks form.
 2> Create Git webhooks for Pivotal tracker.. see here (https://www.pivotaltracker.com/blog/guide-githubs-service-hook-tracker/)
 3> Create a Concourse pipeline with Tracker resoruce. See the example Yml file under ci/Tracker.yml.
@@ -60,17 +64,4 @@ Note: The commit status has the status with the ID of the Epic in our example ab
 
 ## Sample of Tracker Resource
 
-(Defining)
-
-- name: tracker-output
-  type: tracker
-  source:
-    token: {{tracker-token}}
-    project_id: "1859335"
-    tracker_url: https://www.pivotaltracker.com
- 
-(Using)
-- put: tracker-output
-    params:
-      repos:
-    - pcf-ers-demo
+see under ci/Tracker.yml
