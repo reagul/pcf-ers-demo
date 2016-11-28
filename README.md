@@ -58,7 +58,19 @@ Note: The commit status has the status with the ID of the Epic in our example ab
 
 [(Finishes|Fixes|Delivers) #TRACKER_STORY_ID]
 
-## Using Tracker resource as part of Concourse.ci pipeline
-[Finishes #134988335]
-[Finishes #134971619]
-[Finishes #134988591]
+## Sample of Tracker Resource
+
+(Defining)
+
+- name: tracker-output
+  type: tracker
+  source:
+    token: {{tracker-token}}
+    project_id: "1859335"
+    tracker_url: https://www.pivotaltracker.com
+ 
+(Using)
+- put: tracker-output
+    params:
+      repos:
+    - pcf-ers-demo
